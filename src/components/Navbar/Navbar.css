@@ -10,6 +10,7 @@
 }
 
 .nav>.nav-header>.nav-title {
+    text-decoration: none;
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 700;

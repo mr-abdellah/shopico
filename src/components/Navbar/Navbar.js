@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="nav" id="navbar">
       <input type="checkbox" id="nav-check" />
       <div className="nav-header">
-        <div className="nav-title">Shopico</div>
+        <Link to='/' className="nav-title">Shopico</Link>
       </div>
       <div className="nav-btn">
         <label for="nav-check">
@@ -21,10 +21,10 @@ const Navbar = () => {
       </div>
 
       <div className="nav-links">
-        <Link to="">Home</Link>
-        <Link to="">Categories</Link>
-        <Link to="">Best Deals</Link>
-        <Link to="">Best Seller</Link>
+        <Link to="/">Home</Link>
+        <Link to="/categories">Categories</Link>
+        <Link to="/best_deals">Best Deals</Link>
+        <Link to="/best_seller">Best Seller</Link>
         <Link to="">
           <BsFillPersonFill className="profile" />
         </Link>
