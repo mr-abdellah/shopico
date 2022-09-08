@@ -22,9 +22,10 @@ const Navbar = () => {
 
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/categories">Categories</Link>
         <Link to="/best_deals">Best Deals</Link>
         <Link to="/best_seller">Best Seller</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/faq">FAQ</Link>
         <Link to="">
           <BsFillPersonFill className="profile" />
         </Link>

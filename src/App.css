@@ -7,3 +7,33 @@ body {
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
+
+@font-face {
+    font-family: BeVietnam;
+    src: url('./assets/fonts/BeVietnam-ExtraBold.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: BeVietnam;
+    src: url('./assets/fonts/BeVietnam-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: BeVietnam;
+    src: url('./assets/fonts/BeVietnam-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: BeVietnam;
+    src: url('./assets/fonts/BeVietnam-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BeVietnam;
+    src: url('./assets/fonts/BeVietnam-Thin.ttf');
+    font-weight: 300;
+}
