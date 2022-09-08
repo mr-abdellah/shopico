@@ -31,9 +31,7 @@ const Hero = () => {
           Shop now
         </Link>
         <img
-          className={
-            bestProducts.isLoading ? "hero-img loading" : "hero-img"
-          }
+          className={bestProducts.isLoading ? "hero-img loading" : "hero-img"}
           src={productOne}
           alt=""
         />

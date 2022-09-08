@@ -2,6 +2,9 @@
     height: 50px;
     width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav>.nav-header {
@@ -12,7 +15,7 @@
 .nav>.nav-header>.nav-title {
     text-decoration: none;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #38cabc;
     padding: 10px 10px 10px 10px;
@@ -23,22 +26,24 @@
 }
 
 .nav>.nav-links {
-    display: inline;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
     float: right;
     font-size: 18px;
     padding-right: 4%;
 }
 
 .nav>.nav-links>a {
-    display: inline-block;
-    padding: 11px 10px;
     text-decoration: none;
     color: #4b4545;
+    white-space: nowrap;
 }
 
-/* .nav>.nav-links>a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-} */
+.nav>.nav-links>a:hover {
+    border-bottom: 1px solid #38cabc;
+}
 
 .nav>#nav-check {
     display: none;
