@@ -15,7 +15,7 @@ const Hero = () => {
 
   const productOne = bestProducts.isSuccess
     ? bestProducts?.data[random].product_main_image_url
-    : "";
+    : null;
   return (
     <div className="home">
       <div className="home-container">
@@ -30,7 +30,13 @@ const Hero = () => {
         <Link id="shop-now-link" to="/best_deals">
           Shop now
         </Link>
-        <img src={productOne} alt="" />
+        <img
+          className={
+            bestProducts.isLoading ? "hero-img loading" : "hero-img"
+          }
+          src={productOne}
+          alt=""
+        />
       </div>
     </div>
   );
