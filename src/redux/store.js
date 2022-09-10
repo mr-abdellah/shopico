@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
-import { storeApi } from "./products";
+import productsReducer from "./products";
 
 const store = configureStore({
   reducer: {
-    [storeApi.reducerPath]: storeApi.reducer
+    products: productsReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });

@@ -41,7 +41,8 @@
     white-space: nowrap;
 }
 
-.nav>.nav-links>a:hover {
+.nav>.nav-links>a:hover,
+.nav>.nav-links>a.active {
     border-bottom: 1px solid #38cabc;
 }
 

@@ -1,0 +1,28 @@
+.Card {
+    margin-bottom: 3%;
+    border: 1px solid #3a3333;
+    border-radius: 12px;
+}
+
+#deal-title {
+    color: #3a3333;
+}
+
+#deal-title::before {
+    content: '• ';
+    color: #3a3333;
+}
+
+.deal-background {
+    padding: 3%;
+    height: 50%;
+    overflow: hidden;
+    border-bottom: 1px solid #3a3333;
+    display: flex;
+    justify-content: center;
+}
+
+.deal-background img {
+    width: 50%;
+    height: 100%;
+}

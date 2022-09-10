@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
@@ -21,20 +21,19 @@ const Navbar = () => {
       </div>
 
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/best_deals">Best Deals</Link>
-        <Link to="/best_seller">Best Seller</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/faq">FAQ</Link>
-        <Link to="">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/best_deals">Best Deals</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/faq">FAQ</NavLink>
+        <NavLink to="">
           <BsFillPersonFill className="profile" />
-        </Link>
-        <Link to="">
+        </NavLink>
+        <NavLink to="">
           <AiOutlineHeart id="whishlist"/>
-        </Link>
-        <Link to="">
+        </NavLink>
+        <NavLink to="">
           <FiShoppingCart id="cart" />
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
