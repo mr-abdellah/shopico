@@ -1,5 +1,6 @@
 import "./Product.css";
 import Rating from "./../rating/Rating";
+import BuyBtn from '../buyBtn/BuyBtn';
 
 const Product = ({
   id,
@@ -21,11 +22,15 @@ const Product = ({
           <div className="deal-background">
             <img src={image} alt={title} />
           </div>
-          <h3 id="deal-title">{title}</h3>
           <div className="deal-info">
+            <h3 id="deal-title">{title}</h3>
             <p id="deal-price">{`Price ${price}$`}</p>
+            <div className="rating-placeholder">{Rating(rating)}</div>
+          <div className="deal-btns">
+            <button>Add to wishlist</button>
+            <BuyBtn />
           </div>
-          {Rating(rating)}
+          </div>
         </div>
       )}
     </>

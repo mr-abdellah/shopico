@@ -12,22 +12,23 @@ const Products = () => {
       dispatch(loadProducts());
     }, []);
   return (
-    <div className="Products">
-      {products.map((product, index) => (
-        <Product
-          pending={pending}
-          failed={failed}
-          key={index}
-          title={product.title}
-          price={product.price}
-          description={product.description}
-          image={product.img}
-          rating={product.rating}
-          category={product.category}
-          id={product.id}
-        />
-      ))}
-    </div>
+      <div className="Products">
+        {products.map((product, index) => (
+          <Product
+            pending={pending}
+            failed={failed}
+            key={index}
+            title={product.title}
+            price={product.price}
+            description={product.description}
+            image={product.img}
+            rating={product.rating}
+            category={product.category}
+            id={product.id}
+          />
+        ))}
+      </div>
+
   );
 };
 

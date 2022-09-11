@@ -2,15 +2,7 @@
     margin-bottom: 3%;
     border: 1px solid #3a3333;
     border-radius: 12px;
-}
-
-#deal-title {
-    color: #3a3333;
-}
-
-#deal-title::before {
-    content: '• ';
-    color: #3a3333;
+    height: 50vh;
 }
 
 .deal-background {
@@ -25,4 +17,37 @@
 .deal-background img {
     width: 50%;
     height: 100%;
+}
+
+.deal-info {
+    padding-left: 2%;
+}
+
+#deal-title {
+    color: #3a3333;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.deal-info p {
+    margin: 2% 0;
+}
+
+@media (max-width: 768px) {
+    .Card {
+        height: 45vh;
+        width: 90%;
+    }
+
+    #deal-title {
+        margin-top: 5%;
+    }
+
+    .deal-btns {
+        margin-top: 2%;
+    }
 }

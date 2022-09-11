@@ -1,15 +1,17 @@
 .Products {
-    width: 100%;
+    position: relative;
+    top: 6vh;
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 50vh;
     justify-content: space-evenly;
     margin-top: 5%;
+    margin-top: 10%;
 }
 
 @media (max-width: 768px) {
     .Products {
-        grid-template-columns: repeat(1, 70%);
-        grid-template-rows: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
