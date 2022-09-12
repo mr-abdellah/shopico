@@ -1,6 +1,8 @@
 import "./Product.css";
 import Rating from "./../rating/Rating";
 import BuyBtn from '../buyBtn/BuyBtn';
+import AddWishlistBtn from "../addWishlistBtn/addWishlistBtn";
+import { useState } from 'react';
 
 const Product = ({
   id,
@@ -12,7 +14,9 @@ const Product = ({
   rating,
   pending,
   failed,
+  product,
 }) => {
+
   return (
     <>
       {pending ? (
@@ -26,10 +30,10 @@ const Product = ({
             <h3 id="deal-title">{title}</h3>
             <p id="deal-price">{`Price ${price}$`}</p>
             <div className="rating-placeholder">{Rating(rating)}</div>
-          <div className="deal-btns">
-            <button>Add to wishlist</button>
-            <BuyBtn />
-          </div>
+            <div className="deal-btns">
+              <AddWishlistBtn product={product}/>
+              <BuyBtn />
+            </div>
           </div>
         </div>
       )}

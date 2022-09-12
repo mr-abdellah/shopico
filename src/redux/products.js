@@ -11,7 +11,17 @@ const productsSlice = createSlice({
     failed: false,
     products: [],
   },
-  reducers: {},
+  reducers: {
+    addTowishlist(state, action) {
+      const newState = state.products.map((product) => {
+        if (product.id === action.payload.id) {
+          return {...product,liked:true}
+        }
+        return product;
+      })
+      return {...state, products: newState}
+    }
+  },
   extraReducers: {
     [loadProducts.pending]: (state) => {
       state.pending = true;
@@ -26,6 +36,7 @@ const productsSlice = createSlice({
         category: product.category,
         rating: product.rating.rate,
         price: product.price,
+        liked:false
       }));
     },
     [loadProducts.rejected]: (state) => {
@@ -33,5 +44,7 @@ const productsSlice = createSlice({
     },
   },
 });
+
+export const { addTowishlist } = productsSlice.actions;
 
 export default productsSlice.reducer;

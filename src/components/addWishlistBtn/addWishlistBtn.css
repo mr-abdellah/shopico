@@ -1,0 +1,12 @@
+
+
+
+#addWishlistBtn {
+  padding: 2% 4%;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  background-color: #99024f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+}
