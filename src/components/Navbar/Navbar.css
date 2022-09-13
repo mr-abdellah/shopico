@@ -1,0 +1,145 @@
+.nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav>.nav-header {
+    display: inline;
+    padding-left: 4%;
+}
+
+.nav>.nav-header>.nav-title {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #38cabc;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    float: right;
+    font-size: 18px
+}
+
+.nav>.nav-links>a {
+    text-decoration: none;
+    color: #4b4545;
+    white-space: nowrap;
+}
+
+.nav>.nav-links>a:hover,
+.nav>.nav-links>a.active {
+    border-bottom: 1px solid #38cabc;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+#wishlist-hide {
+  display: none;
+}
+
+@media (max-width:768px) {
+#navbar {
+position: fixed;
+top: 0;
+background-color: #fff;
+z-index: 99;
+}
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-links>a:hover,
+    .nav>.nav-links>a.active {
+        border-bottom: none;
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 70%;
+        height: 10px;
+        border-top: 2px solid #242424;
+    }
+
+    .nav>.nav-links {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f4f2f3;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links,
+    .nav#nav-check:checked~#navbar{
+        height: calc(100vh - 50px);
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    .nav-links a:nth-child(5) {
+        order: 1;
+    }
+
+    .nav-links a:nth-child(6) {
+        order: 2;
+    }
+
+    .nav-links a:nth-child(7) {
+        order: 3;
+    }
+
+    .nav-links a:nth-child(1) {
+        order: 4;
+    }
+
+    .nav-links a:nth-child(2) {
+        order: 5;
+    }
+
+    .nav-links a:nth-child(3) {
+        order: 6;
+    }
+
+    .nav-links a:nth-child(4) {
+        order: 7;
+    }
+}

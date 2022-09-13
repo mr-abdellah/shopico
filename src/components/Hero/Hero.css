@@ -1,0 +1,81 @@
+.home {
+    padding: 7%;
+    /* padding: 5%; */
+    font-family: 'BeVietnam', sans-serif;
+}
+
+
+.home-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.home-container h1 {
+    color: #3a3333;
+    margin: 4% 0;
+    font-size: 3.5rem;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.home-container p {
+    color: #808080;
+    font-size: 1.4rem;
+    width: 65%;
+    margin: 4% 0;
+    grid-area: 2 / 1 / 3 / 2;
+    margin-top: 0;
+}
+
+#shop-now-link {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #38cabc;
+    color: #fff;
+    padding: 2% 6%;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.hero-img {
+    width: 35rem;
+    height: 30rem;
+    grid-area: 1 / 2 / 4 / 3;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .home-container h1 {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        grid-area: 2 / 1 / 3 / 2;
+        font-size: 1.2rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .hero-img {
+        grid-area: 3 / 1 / 4 / 2;
+        width: 100%;
+        height: 20rem;
+        margin-top: 4%;
+    }
+
+    #shop-now-link {
+        grid-area: 4/ 1 / 5 / 2;
+        width: 30%;
+        margin-top: 5%;
+    }
+}

@@ -1,0 +1,15 @@
+#buyBtn {
+  padding: 2% 4%;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  background-color: #6fcbd8;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+  /* transition: 0.2s ease-in-out; */
+}
+
+/* #buyBtn:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: #c9c9c9 3px 2px;
+} */
